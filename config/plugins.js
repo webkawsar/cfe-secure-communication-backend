@@ -1,17 +1,16 @@
 module.exports = ({ env }) => ({
-    email: {
-      config: {
-        provider: 'mailgun',
-        providerOptions: {
-          key: env('MAILGUN_SECRET_KEY'), // Required
-          domain: env('MAILGUN_DOMAIN'), // Required
-        },
-        settings: {
-          defaultFrom: 'web.kawsarahmed@gmail.com',
-          defaultReplyTo: 'kawsarahmed.dev@gmail.com',
-        },
+  email: {
+    config: {
+      provider: 'sendgrid',
+      providerOptions: {
+        apiKey: env('SENDGRID_API_KEY'),
+      },
+      settings: {
+        defaultFrom: 'kawsarahmed.developer@gmail.com',
+        defaultReplyTo: 'kawsarahmed.developer@gmail.com',
       },
     },
+  },
     upload: {
         config: {
           provider: 'cloudinary',
