@@ -14,7 +14,7 @@ module.exports = {
                 <p>You are invited to sign up for the CFE Secure Communication web application.</p>
                 <P>Please click the below link and complete your sign-up process by using a token.</P>
                 <h2>Your token is: ${result.token}</h2>
-                <a href="https://facebook.com">Click the link</a>
+                <a href="http://127.0.0.1:5173/register">Click the link</a>
                 <h4>Thanks.</h4>
             `,
             });
