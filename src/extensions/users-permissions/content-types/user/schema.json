@@ -67,6 +67,10 @@
       "type": "boolean",
       "default": false,
       "required": false
+    },
+    "token": {
+      "type": "biginteger",
+      "required": true
     }
   }
 }
