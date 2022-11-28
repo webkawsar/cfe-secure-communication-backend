@@ -31,7 +31,9 @@
     },
     "token": {
       "type": "biginteger",
-      "required": true
+      "required": true,
+      "min": "10000",
+      "max": "5000000"
     },
     "isActivate": {
       "type": "boolean",
