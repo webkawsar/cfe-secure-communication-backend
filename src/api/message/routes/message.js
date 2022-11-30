@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * bakery router
+ * message router
  */
 
 const { createCoreRouter } = require('@strapi/strapi').factories;
 
-module.exports = createCoreRouter('api::bakery.bakery');
+module.exports = createCoreRouter('api::message.message');

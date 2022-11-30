@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * bakery controller
+ * message controller
  */
 
 const { createCoreController } = require('@strapi/strapi').factories;
 
-module.exports = createCoreController('api::bakery.bakery');
+module.exports = createCoreController('api::message.message');
