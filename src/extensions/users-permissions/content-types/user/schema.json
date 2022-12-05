@@ -71,6 +71,18 @@
     "token": {
       "type": "biginteger",
       "required": true
+    },
+    "firstName": {
+      "type": "string",
+      "required": true,
+      "minLength": 3,
+      "maxLength": 30
+    },
+    "lastName": {
+      "type": "string",
+      "required": true,
+      "minLength": 3,
+      "maxLength": 30
     }
   }
 }
