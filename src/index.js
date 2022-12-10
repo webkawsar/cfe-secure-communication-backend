@@ -45,12 +45,17 @@ module.exports = {
     strapi.io = io
 
     io.on('connection', (socket) => {
-      console.log('Socket.io Connected')
+      console.log('Socket.io Connected');
+
+
+      socket.on('send-message', (data) => {
+        console.log(data, 'data');
+        io.emit('get-message', data);
+      })
 
       socket.on('disconnect', () => {
         console.log('Socket.io Disconnect');
       })
     })
-
   },
 };
